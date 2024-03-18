@@ -9,7 +9,7 @@ export function Account() {
 
   return (
     <div className="flex items-center space-x-4">
-      {connector.icon ? (
+      {connector && connector.icon ? (
         <img
           alt="ENS Avatar"
           className="h-8 w-8 rounded-full"
