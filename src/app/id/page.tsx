@@ -82,7 +82,7 @@ export default function Home() {
       })
       .then((data) => {
         Swal.fire({
-          title: "Signature Signed Successfully",
+          title: "Wallet Verified Successfully",
           icon: "success",
         });
         resetState();
@@ -90,7 +90,7 @@ export default function Home() {
       .catch((error) => {
         console.error("Error:", error);
         Swal.fire({
-          title: "Signature Signed Failed",
+          title: "Wallet Verification Failed",
           icon: "error",
         });
       });
